@@ -1,0 +1,25 @@
+{
+  "name": "learning-ng1.5.x",
+  "version": "1.0.0",
+  "description": "learning 1.5 from Try Angular",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahavir2013/learning-ng1.5.x.git"
+  },
+  "keywords": [
+    "angularjs1.5"
+  ],
+  "author": "Mahavir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahavir2013/learning-ng1.5.x/issues"
+  },
+  "homepage": "https://github.com/mahavir2013/learning-ng1.5.x#readme",
+  "dependencies": {
+    "angular": "^1.5.11"
+  }
+}
