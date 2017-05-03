@@ -21,6 +21,8 @@
   "homepage": "https://github.com/mahavir2013/learning-ng1.5.x#readme",
   "dependencies": {
     "angular": "^1.5.11",
+    "angular-resource": "^1.5.11",
+    "angular-route": "^1.5.11",
     "bootstrap": "^3.3.7"
   }
 }

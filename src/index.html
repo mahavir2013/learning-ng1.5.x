@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='try'>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Try Angular 1.5</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <script src='/node_modules/angular/angular.min.js' ></script>
+    <script src='/node_modules/angular-resource/angular-resource.min.js' ></script>
+    <script src='/node_modules/angular-route/angular-route.min.js' ></script>
+
+    <script src='/app/app.module.js' ></script>
+    <script src='/app/app.config.js' ></script>
+
+    <script src='/app/blog-detail/blog-detail.module.js' ></script>
+    <script src='/app/blog-detail/blog-detail.component.js' ></script>
+    <script src='/app/blog-list/blog-list.module.js' ></script>
+    <script src='/app/blog-list/blog-list.component.js' ></script>
+  </head>
+  <body>
+    <h1>Nav</h1>
+    <div ng-view></div>
+  </body>
+</html>
