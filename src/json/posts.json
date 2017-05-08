@@ -2,7 +2,14 @@
 	"title": "Some title",
 	"id": 1,
 	"description": "This is a book",
-	"publishDate": "2016-01-25"
+	"publishDate": "2016-01-25",
+	"comments": [{
+		"id": 1,
+		"text": "Nice book"
+	}, {
+		"id": 2,
+		"text": "Another comment"
+	}]
 }, {
 	"title": "Title",
 	"id": 2,
