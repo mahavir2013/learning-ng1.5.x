@@ -12,4 +12,4 @@ Look for: Install Django & Python on Windows
 Also for Local Webserver for AngularJS and Javascript Apps [Youtube](https://www.youtube.com/watch?v=P4N3MDOSITs)
 joincfe.com/guide and [follow](https://github.com/codingforentrepreneurs/Guides/blob/master/all/angular_webserver.md)
 
-To be continued from: Try AngularJS 1.5 - 27 of 33 - Angular Columns
+To be continued from: Try AngularJS 1.5 - 29 of 33 - Order By & Images
