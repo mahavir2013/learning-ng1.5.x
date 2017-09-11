@@ -1,7 +1,21 @@
-<h1>Blog List<small><a href="#" ng-click="changeCols(4)">Change</a></small></h1>
 <div class="row">
-  <div class="col-sm-6">
-    <input type="text" ng-model="query" class="form-control" placeholder="Filter">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h1 ng-hide="searchQuery">Blog List</h1>
+    <h1 ng-show="searchQuery">Results for {{query}}</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" ng-model="query" class="form-control" placeholder="Filter">
+      </div>
+      <div class="col-sm-6">
+        <select ng-model="order" class="form-control">
+          <option value="-publishDate">Recent</option>
+          <option value="publishDate">Older</option>
+          <option value="title">A-Z</option>
+          <option value="-title">Z-A</option>
+        </select>
+      </div>
+    </div>
+    <dir-pagination-controls pagination-id="sub-content"></dir-pagination-controls>
   </div>
 </div>
 <!-- <ul ng-if="items.length > 0">
@@ -12,18 +26,31 @@
 	<!-- </li>
 </ul> -->
 
-<li dir-paginate="item in items | filter: query | itemsPerPage: 5 as postItems" pagination-id="sub-content">
-  {{ item.title }}
-</li>
-<span ng-if="postItems.length == 0">No Sub Item Found</span>
-<dir-pagination-controls pagination-id="sub-content"></dir-pagination-controls>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3" dir-paginate="item in items | orderBy: order | filter: query | itemsPerPage: 5 as postItems" pagination-id="sub-content">
+    <div class="thumbnail">
+        <img ng-src="{{item.image}}" alt="...">
+        <div class="caption">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }} {{ item.publishDate }}</p>
+          <p><a ng-href="#" class="btn btn-primary" confirm-click="Are you ready?" confirmed-click="goToItem(item)">View</a></p>
+        </div>
+      </div>
+  </div>
+  <span ng-if="postItems.length == 0">No Posts Found</span>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <dir-pagination-controls pagination-id="sub-content"></dir-pagination-controls>
+  </div>
+</div>
 
-<span ng-if="items.length === 0">Post coming soon!</span>
+<!-- <span ng-if="items.length === 0">Post coming soon!</span>
 
 <div class="row" dir-paginate="items in colItems | filter: query | itemsPerPage: 4 as mainItems" pagination-id="main-content">
   <div class="{{ cssClass }}" ng-repeat="item in items">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img ng-src="{{item.image}}" alt="...">
       <div class="caption">
         <h3>{{ item.title }}</h3>
         <p>{{ item.text }} {{ item.publishDate }}</p>
@@ -33,7 +60,7 @@
   </div>
 </div>
 <span ng-if="mainItems.length == 0">No Main Item Found</span>
-<dir-pagination-controls ng-hide="query.length > 0 " pagination-id="main-content"></dir-pagination-controls>
+<dir-pagination-controls ng-hide="query.length > 0 " pagination-id="main-content"></dir-pagination-controls> -->
 
 <!-- <div class="row">
   <div class="col-sm-6 col-md-4" ng-repeat="item in items">

@@ -9,85 +9,126 @@
 	}, {
 		"id": 2,
 		"text": "Another comment"
-	}]
+	}],
+	"image": "/images/1.png"
 }, {
-	"title": "Title",
+	"title": "New Item",
 	"id": 2,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2015-02-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Tea",
 	"id": 3,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2015-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 4,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 5,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Tea",
 	"id": 3,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 4,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 5,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Tea",
 	"id": 3,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 4,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 5,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Tea",
 	"id": 3,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 4,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 5,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Tea",
 	"id": 3,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 4,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 5,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Tea",
 	"id": 3,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 4,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 5,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }, {
 	"title": "Lite",
 	"id": 6,
-	"description": "This is a book"
+	"description": "This is a book",
+	"publishDate": "2016-12-11",
+	"image": "/images/1.png"
 }]

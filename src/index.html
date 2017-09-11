@@ -13,6 +13,7 @@
     <script src='/node_modules/angular/angular.min.js' ></script>
     <script src='/node_modules/angular-resource/angular-resource.min.js' ></script>
     <script src='/node_modules/angular-route/angular-route.min.js' ></script>
+    <script src='/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js' ></script>
     <script src='/node_modules/angular-utils-pagination/dirPagination.js' ></script>
 
     <script src='/app/app.module.js' ></script>
@@ -28,11 +29,14 @@
 
     <script src='/app/utils/confirm-click/confirm-click.module.js' ></script>
     <script src='/app/utils/confirm-click/confirm-click.directive.js' ></script>
+
+    <script src='/app/utils/try-nav/try-nav.module.js' ></script>
+    <script src='/app/utils/try-nav/try-nav.directive.js' ></script>
   </head>
   <body>
-    <nav class="container">
-      <h1>Nav</h1>
-    </nav>
-    <div class="container" ng-view></div>
+    <div class="container">
+        <try-nav></try-nav>
+        <div class="col-sm-12" ng-view></div>
+    </div>
   </body>
 </html>
