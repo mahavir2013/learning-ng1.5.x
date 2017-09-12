@@ -3,19 +3,26 @@
     <div class="page-header">
       <h1>{{post.title}} <small>{{post.publishDate}}</small></h1>
     </div>
+
+    <span ng-if="post.image">
+      <img ng-src="{{post.image}}" class="img-responsive"><br>
+    </span>
+
     <p>{{post.description}}</p>
 
     <hr>
 
     <h3>Comments</h3>
-    <div class="row">
+    <div class="row" ng-show="comments.length">
       <div class="col-sm-6">
-        <input class="form-control" type="text" ng-model="query" placeholder="Filter comments">
+        <input class="form-control" type="text" ng-model="query" placeholder="Filter comments"><br>
       </div>
     </div>
-    <ul>
-    	<li ng-repeat="comment in post.comments | filter: query  track by $index">
-    		{{ comment.text }} <a href="#" confirm-click="Do you want to delete this?" confirmed-click="deleteComment($index)">Confirm</a> <a href="#" ng-click="deleteComment($index)">Delete</a>
+    <ul ng-show="comments.length">
+    	<li ng-repeat="comment in comments | filter: query  track by $index">
+    		{{ comment.text }}
+        <a href="#" class="btn btn-sm btn-default" confirm-click="Do you want to delete this?" confirmed-click="deleteComment($index)">X</a>
+        <!-- <a href="#" ng-click="deleteComment($index)">Delete</a> -->
     	</li>
     </ul>
 
